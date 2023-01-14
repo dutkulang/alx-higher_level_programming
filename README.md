@@ -1,2 +1,2 @@
-# alx-higher_level_programming
-ALX higher level programming with python 3
+# Python
+python is an object oriented, high level general programming language. It can be used in almost very industry from data science, web development, machine learning, AI etc.
