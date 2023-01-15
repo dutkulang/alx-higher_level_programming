@@ -1,6 +1,6 @@
 # lambda, map, filter and reduce functions
 
-<ins>lambda</ins>
+1. <**ins**>**lambda**</ins>
 
 lambda is a function that does not have a name.
 
@@ -39,6 +39,18 @@ print(x(3)) #27
 x = lambda x : x if True % 2 == 0 else False
 print(x(5)) #False
 ```
+
+2. <ins>**map**</ins>
+map is a function that takes in two arguments, a function, and an iterable. It loops through the iterable passing each of its elemnts in the function. iterable can be a list or a tuple.
+
+## Declaration
+
+```py
+map(function, iterable)
+```
+
+example
+
 
 
 
