@@ -13,7 +13,7 @@ lambda argument(s) : expression
 ```
 
 **Examples**
-
+<hr>
 `lambda1.py`
 
 ```p
@@ -39,6 +39,7 @@ print(x(3)) #27
 x = lambda x : x if True % 2 == 0 else False
 print(x(5)) #False
 ```
+<hr><br>
 
 2. <ins>**map**</ins>
 map is a function that takes in two arguments, a function, and an iterable. It loops through the iterable passing each of its elemnts in the function. iterable can be a list or a tuple.
@@ -49,7 +50,16 @@ map is a function that takes in two arguments, a function, and an iterable. It l
 map(function, iterable)
 ```
 
-example
+Example without using map
+
+without_map.py
+
+```py
+def squareit(n):
+    return n*n
+
+my_numbers = [2,3,4,5,6,7,8,9]
+```
 
 
 
