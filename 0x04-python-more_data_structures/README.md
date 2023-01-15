@@ -4,10 +4,32 @@
 
 lambda is a function that does not have a name.
 
+lambda return returns memory to address object class lambda
+
 ## Declaration
 
 ```py
-lambda argument : expression
+lambda argument(s) : expression
 ```
+
+**Examples**
+
+`lambda1.py`
+
+```p
+#Using lambda to find the square of a number
+
+x = lambda x : x*x
+print(x(5)) #25
+```
+
+`lambda2.py`
+
+```py
+#Using lambda to cube a number
+x = lambda n : n*n*n
+print(x(3)) #27
+```
+
 
 
