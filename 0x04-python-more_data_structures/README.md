@@ -16,7 +16,9 @@ lambda argument(s) : expression
 <hr>
 `lambda1.py`
 
-```p
+```py
+#!/usr/bin/python3
+
 #Using lambda to find the square of a number
 
 x = lambda x : x*x
@@ -26,6 +28,8 @@ print(x(5)) #25
 `lambda2.py`
 
 ```py
+#!/usr/bin/python3
+
 #Using lambda to cube a number
 x = lambda n : n*n*n
 print(x(3)) #27
@@ -33,6 +37,8 @@ print(x(3)) #27
 `lambda3.py`
 
 ```py
+#!/usr/bin/python3
+
 #Using lambda to find number is even or odd
 #prints True if number is even else false
 
@@ -51,10 +57,13 @@ map(function, iterable)
 ```
 
 Example without using map
+<hr>
 
-without_map.py
+`without_map.py`
 
 ```py
+#!/usr/bin/python3
+
 def squareit(n):
     return n*n
 
@@ -67,6 +76,20 @@ def square_func(afunc, alist):
 
 square_func(squareit, my_numbers)
 print(squared_numbers)
+
+#[4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+`with_map.py`
+```py
+#!/usr/bin/python3
+
+def squareit(n):
+    return n*n
+
+my_numbers = [2,3,4,5,6,7,8,9]
+result = list(map(squareit, my_numbers))
+print(result)
 
 #[4, 9, 16, 25, 36, 49, 64, 81]
 ```
