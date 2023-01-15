@@ -59,6 +59,16 @@ def squareit(n):
     return n*n
 
 my_numbers = [2,3,4,5,6,7,8,9]
+squared_numbers = []
+
+def square_func(afunc, alist):
+    for element in alist:
+        squared_numbers.append(afunc(element))
+
+square_func(squareit, my_numbers)
+print(squared_numbers)
+
+#[4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
 
