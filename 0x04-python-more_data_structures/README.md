@@ -94,6 +94,7 @@ print(result)
 #[4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
+map loops through the members of the iterable and pass `each` to the function. Note that map returns the memory address of object class map, the place in memory where the map is stored. with that address we can't do much so we coonvert it to another data structure that is viewable for our case a list. so it's return is now being stored in a list
 
 
 
