@@ -34,8 +34,10 @@ print(x(3)) #27
 
 ```py
 #Using lambda to find number is even or odd
+#prints True if number is even else false
 
-lambda x : x if True % 2 == 0 else False
+x = lambda x : x if True % 2 == 0 else False
+print(x(5))
 ```
 
 
