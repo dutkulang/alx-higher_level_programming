@@ -124,3 +124,20 @@ print("Odd: {}".format(odd_only))
 # Even: [0, 2, 4, 6, 8, 10, 20]
 # Odd: [1, 3, 5, 7, 9, 55, 79]
 ```
+
+`with_map.py`
+
+```py
+#!/usr/bin/python3
+
+def even_func(num):
+    if (num % 2) == 0:
+        return True
+    else:
+        return False
+    
+numbers = [0,1,2,3,4,5,6,7,8,9,10,20,55,79]
+result = list(map(even_func, numbers))
+print(result)
+#[True, False, True, False, True, False, True, False, True, False, True, True, False, False]
+```
