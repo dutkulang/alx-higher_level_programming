@@ -37,7 +37,7 @@ print(x(3)) #27
 #prints True if number is even else false
 
 x = lambda x : x if True % 2 == 0 else False
-print(x(5))
+print(x(5)) #False
 ```
 
 
