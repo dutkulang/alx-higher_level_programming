@@ -141,3 +141,11 @@ result = list(map(even_func, numbers))
 print(result)
 #[True, False, True, False, True, False, True, False, True, False, True, True, False, False]
 ```
+
+implementing the above with lambda and map
+```py
+numbers = [0,1,2,3,4,5,6,7,8,9,10,20,55,79]
+result = list(map((lambda x: True if x % 2 == 0 else False), numbers))
+
+#[True, False, True, False, True, False, True, False, True, False, True, True, False, False]
+```
