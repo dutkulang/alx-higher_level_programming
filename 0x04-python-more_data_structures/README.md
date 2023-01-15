@@ -30,6 +30,13 @@ print(x(5)) #25
 x = lambda n : n*n*n
 print(x(3)) #27
 ```
+`lambda3.py`
+
+```py
+#Using lambda to find number is even or odd
+
+lambda x : x if True % 2 == 0 else False
+```
 
 
 
