@@ -200,7 +200,8 @@ For each loop, map will go inside each iterable pick one element in each at the 
 
 3. <ins>**filter function**</ins>
 
-The filter function as the it's name says, just filters out the elements inside the iterable that the function returns as `true`.
+The filter function as the it's name says, just filters out the items from it and them to the function that will check which of the items is the biggest,highest, it will lastly return the biggest of all the items inside the iterable.
+`` inside the iterable that the function returns as `true`.
 
 Filter like other functions takes in a function and an iterable. it also return a object class filter so it is up to the programmer to covert it back to something readable like a list or tuple.
 
@@ -252,9 +253,13 @@ print(result)
 
 4. <ins>**reduce function**</ins>
 
-reduce is not a built python function it has to be imported from `functools` library that comes with python. 
+reduce is not a built python function it has to be imported from `functools` library that comes with python.
+
+reduce takes in a function and an iterable, it goes into iterable and pick to two items from it and them to the function that will check which of the items is the biggest,highest, it will lastly return the biggest of all the items inside the iterable.
+
+`it sort of returns the maximum item in the iterable`
 
 ```py
 from functools import reduce
-
+reduce(function, iterable)
 ```
