@@ -201,3 +201,18 @@ result = list(filter(odd, my_nums))
 print(result)
 #[13, 19]
 ```
+**Map can also be used with builtin python functions like len, capitalise, upper, lower, title etc**
+
+lets look at some examples
+
+<hr>
+
+`map1.py`
+
+```py
+# return a list with the length count of each string length
+my_strings = ["Dut", "python", "apple","linux"]
+
+lengths = list(map(len,my_strings))
+print(lengths)
+```
