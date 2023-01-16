@@ -154,4 +154,10 @@ result = list(map((lambda x: True if x % 2 == 0 else False), numbers))
 ```
 3. <ins>**filter function**</ins>
 
-rrrrr
+The filter function as the it's says, just filters out the elements inside the iterable that return `true`.
+
+Filter like other functions takes in a function and an iterable. it also return a object class filter so it is up to the programmer to covert it back to something readable like a list or tuple.
+
+```py
+filter(function, interable)
+```
