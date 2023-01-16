@@ -1,6 +1,6 @@
 # lambda, map, filter and reduce functions
 
-1. <ins>**lambda**</ins>
+1. <ins>**lambda funnction**</ins>
 
 lambda is a function that does not have a name.
 
@@ -47,7 +47,8 @@ print(x(5)) #False
 ```
 <hr><br>
 
-2. <ins>**map**</ins>
+2. <ins>**map function**</ins>
+
 map is a function that takes in two arguments, a function, and an iterable. It loops through the iterable passing each of its elemnts in the function. iterable can be a list or a tuple.
 
 ## Declaration
@@ -154,6 +155,49 @@ result = list(map((lambda x: True if x % 2 == 0 else False), numbers))
 
 #[True, False, True, False, True, False, True, False, True, False, True, True, False, False]
 ```
+**Map can also be used with builtin python functions like len, capitalize, upper, lower, title etc**
+
+lets look at some examples
+
+<hr>
+
+`map_with_len.py`
+
+```py
+#!/usr/bin/python3
+
+# return a list with the length count of each string length
+my_strings = ["Dut", "python", "apple","linux"]
+
+lengths = list(map(len,my_strings))
+print(lengths)
+#[3,6,5,5]
+```
+
+Map can also take in more than one iterable.
+
+```py
+map(function, iterable1, iterable2)
+```
+
+```py
+#!/usr/bin/python3
+
+base = [1, 2, 3, 4]
+power = [1, 2, 3, 4]
+
+result = list(map(pow, base, power))
+print(result) # [1, 4, 27, 256]
+```
+For each loop, map will go inside each iterable pick one element in each at the same time and pass them to the `pow` funnction
+
+`pow(a, b)` -> a b times
+
+`pow(2,2)` -> 2*2
+
+`pow(3,4)` -> 3*3\*3\*3
+
+
 3. <ins>**filter function**</ins>
 
 The filter function as the it's name says, just filters out the elements inside the iterable that the function returns as `true`.
@@ -205,37 +249,12 @@ result = list(filter(odd, my_nums))
 print(result)
 #[13, 19]
 ```
-**Map can also be used with builtin python functions like len, capitalize, upper, lower, title etc**
 
-lets look at some examples
+4. <ins>**reduce function**</ins>
 
-<hr>
-
-`map_with_len.py`
+reduce is not a built python function it has to be imported from `functools` library that comes with python. 
 
 ```py
-#!/usr/bin/python3
+from functools import reduce
 
-# return a list with the length count of each string length
-my_strings = ["Dut", "python", "apple","linux"]
-
-lengths = list(map(len,my_strings))
-print(lengths)
-#[3,6,5,5]
-```
-
-Map can also take in more than one iterable.
-
-```py
-map(function, iterable1, iterable2)
-```
-
-```py
-#!/usr/bin/python3
-
-base = [1, 2, 3, 4]
-power = [1, 2, 3, 4]
-
-result = list(map(pow, base, power))
-print(result) # [1, 4, 27, 256]
 ```
