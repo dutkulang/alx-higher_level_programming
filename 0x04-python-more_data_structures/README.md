@@ -263,3 +263,16 @@ reduce takes in a function and an iterable, it goes into iterable and pick to tw
 from functools import reduce
 reduce(function, iterable)
 ```
+
+Example
+
+```py
+from functools import reduce
+
+my_numbers = [20,10,15,-100, 500]
+
+max = reduce((lambda x, y: x if x > y else y), my_numbers)
+
+print(max)
+#500
+```
