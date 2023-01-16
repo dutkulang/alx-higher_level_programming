@@ -162,8 +162,9 @@ Filter like other functions takes in a function and an iterable. it also return 
 filter(function, interable)
 ```
 
-example.
+Example.
 
+`without_filter.py`
 ```py
 #!/usr/bin/python3
 #return only odd number
@@ -183,5 +184,20 @@ def oddfunc(afunc, alist):
 oddfunc(odd, my_nums)
 
 print(odd_only)
+#[13, 19]
+```
+`with_filter.py`
+
+```py
+#!/usr/bin/python3
+#return only odd number
+
+def odd(num):
+    if (num % 2) != 0:
+        return True
+
+my_nums = [12,13,14,16,18,19]
+result = list(filter(odd, my_nums))
+print(result)
 #[13, 19]
 ```
