@@ -1,6 +1,6 @@
 # lambda, map, filter and reduce functions
 
-1. <**ins**>**lambda**</ins>
+1. <ins>**lambda**</ins>
 
 lambda is a function that does not have a name.
 
@@ -147,6 +147,8 @@ implementing the above with lambda and map
 `map_and_lambda.py`
 
 ```py
+#!/usr/bin/python3
+
 numbers = [0,1,2,3,4,5,6,7,8,9,10,20,55,79]
 result = list(map((lambda x: True if x % 2 == 0 else False), numbers))
 
@@ -159,7 +161,7 @@ The filter function as the it's name says, just filters out the elements inside 
 Filter like other functions takes in a function and an iterable. it also return a object class filter so it is up to the programmer to covert it back to something readable like a list or tuple.
 
 ```py
-filter(function, interable)
+filter(function, iterable)
 ```
 
 Example.
@@ -167,6 +169,7 @@ Example.
 `without_filter.py`
 ```py
 #!/usr/bin/python3
+
 #return only odd number
 
 def odd(num):
@@ -190,6 +193,7 @@ print(odd_only)
 
 ```py
 #!/usr/bin/python3
+
 #return only odd number
 
 def odd(num):
@@ -201,19 +205,37 @@ result = list(filter(odd, my_nums))
 print(result)
 #[13, 19]
 ```
-**Map can also be used with builtin python functions like len, capitalise, upper, lower, title etc**
+**Map can also be used with builtin python functions like len, capitalize, upper, lower, title etc**
 
 lets look at some examples
 
 <hr>
 
-`map1.py`
+`map_with_len.py`
 
 ```py
+#!/usr/bin/python3
+
 # return a list with the length count of each string length
 my_strings = ["Dut", "python", "apple","linux"]
 
 lengths = list(map(len,my_strings))
 print(lengths)
 #[3,6,5,5]
+```
+
+Map can also take in more than one iterable.
+
+```py
+map(function, iterable1, iterable2)
+```
+
+```py
+#!/usr/bin/python3
+
+base = [1, 2, 3, 4]
+power = [1, 2, 3, 4]
+
+result = list(map(pow, base, power))
+print(result) # [1, 4, 27, 256]
 ```
