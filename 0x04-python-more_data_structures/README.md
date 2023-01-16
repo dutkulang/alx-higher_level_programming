@@ -215,4 +215,5 @@ my_strings = ["Dut", "python", "apple","linux"]
 
 lengths = list(map(len,my_strings))
 print(lengths)
+#[3,6,5,5]
 ```
