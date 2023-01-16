@@ -152,3 +152,6 @@ result = list(map((lambda x: True if x % 2 == 0 else False), numbers))
 
 #[True, False, True, False, True, False, True, False, True, False, True, True, False, False]
 ```
+3. <ins>**filter function**</ins>
+
+rrrrr
