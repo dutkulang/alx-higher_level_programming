@@ -55,6 +55,11 @@ print(my_list)
 ```
 
 2. **dictionary**
-
+```py
+#!/usr/bin/python3
+my_list = [123, True, 456.78, 'am inside a list']
+print(my_list)
+#[123, True, 456.78, 'am inside a list']
+```
 3. **set**
 4. 
