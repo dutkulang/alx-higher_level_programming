@@ -41,6 +41,7 @@ string2 = "a double quoted string"
     ```py
     #!/usr/bin/python3
     my_string = 'a 123 45.678 @ ! - * '
+    print(my_string)
  
     ```
 
