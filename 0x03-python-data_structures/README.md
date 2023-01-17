@@ -8,6 +8,11 @@ python as a high level programming langauge has data structures; strings, lists,
 
 A string is a sequence of characters between single or double qoutes.
 
+```py
+#!/usr/bin/python3
+string1 = 'a single qouted string'
+string2 = "a double quoted string"
+```
 - are immutable 
 - have a defined length
 - are indexed
