@@ -6,8 +6,15 @@ python as a high level programming langauge has data structures; strings, lists,
 
 1. **strings**
 
-2. **lists**
+A string is a sequence of characters between single or double qoutes.
 
-3. **dictionary**
+- are immutable 
+- have a defined length
+- are indexed
+  
 
-4. **set**
+1. **lists**
+
+2. **dictionary**
+
+3. **set**
