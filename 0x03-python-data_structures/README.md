@@ -46,7 +46,15 @@ string2 = "a double quoted string"
     ```
 
 1. **lists**
+list is a sequence of data types between sqaure brackets.
+```py
+#!/usr/bin/python3
+my_list = [123, True, 456.78, 'am inside a list']
+print(my_list)
+#[123, True, 456.78, 'am inside a list']
+```
 
 2. **dictionary**
 
 3. **set**
+4. 
