@@ -64,4 +64,9 @@ print(my_dict['key'])
 # value
 ```
 3. **set**
-4. 
+
+```py
+#!/usr/python3
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+#{False, True, 2.3333333333333335, 'Dut', 345.67, 12}
+```
