@@ -2,8 +2,9 @@
 
 computer don't understand human language what they understand is machine code, 1 and 0. 1 for true zero for false.
 
-python has a variety of ways to check conditions these are called conidtional statements. python unlike other high level programming languages that use curl brackets to indicate the body of condition, python uses indentation. 
+python has a variety of ways to check conditions these are called conidtional statements. python unlike other high level programming languages that use curl brackets to indicate the body of condition, python uses indentation.
 
+The condition will check if the provided expression is true, then it's body block will be executed, if false the program will jump to the next conditional
 
 ```py
 #!/usr/bin/python3
