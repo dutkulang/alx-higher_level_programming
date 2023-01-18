@@ -49,3 +49,11 @@ while count < count_to:
 ```
 
 `for`
+
+```py
+#!/usr/bin/python3
+names = ['Dut', 'Fred', 'Wlliam']
+
+for name in names:
+    print("Hello {}, how are you doing today")
+```
