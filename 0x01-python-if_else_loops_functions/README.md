@@ -40,6 +40,7 @@ else:
 `while`
 
 ```py
+#!/usr/bin/python3
 count = 0
 count_to = 100
 
