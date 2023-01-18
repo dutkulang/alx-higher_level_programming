@@ -18,7 +18,7 @@ condition check2 expression:
     body
 ```
 
-`if, elisf, else`
+`if, elif, else`
 
 ```py
 #!/usr/bin/python3
@@ -35,6 +35,22 @@ if age >= 18:
     prinnt("You are an adult")
 else:
     print("You are a child")
+```
+```py
+#!/usr/bin/python3
+age = 9
+if age <= 3:
+    print('infant')
+
+elif age <= 12:
+    print('a child/kid')
+
+elif age >= 13 <= 19:
+    print("Teenager")
+
+
+else:
+    print("Adult")
 ```
 
 `while`
