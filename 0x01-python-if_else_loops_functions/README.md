@@ -19,7 +19,7 @@ condition check2 expression:
     body
 ```
 
-`if, elif, else`
+1.  **`if, elif, else`**
 
 ```py
 #!/usr/bin/python3
@@ -54,8 +54,9 @@ else:
     print("Adult")
 ```
 
-`while`
+2. **`while`**
 
+The While condition will continue returning True until it hints a point where it becomes False.
 ```py
 #!/usr/bin/python3
 count = 0
