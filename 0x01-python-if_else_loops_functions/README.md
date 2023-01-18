@@ -39,4 +39,13 @@ else:
 
 `while`
 
+```py
+count = 0
+count_to = 100
+
+while count < count_to:
+    print(count)
+    count += 1
+```
+
 `for`
