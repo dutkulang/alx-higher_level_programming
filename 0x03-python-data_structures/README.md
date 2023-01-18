@@ -55,6 +55,11 @@ print(my_list)
 ```
 
 2. **dictionary**
+
+A dictionary is a collection data type that is unordered and mutable. It consists of a collection of key, value pair separated by a colon `:`.
+
+`Each key is mapped to a value`
+
 ```py
 #!/usr/bin/python3
 my_dict = {
@@ -63,7 +68,21 @@ my_dict = {
 print(my_dict['key'])
 # value
 ```
-3. **set**
+
+```py
+#!/usr/bin/python3
+presidents = {
+    'p1':'Dut Kulang',
+    'p2': 'Salva Kiir',
+    'p3': 'Robert Mugabe'
+}
+print(presidents[p1])
+
+```
+
+1. **set**
+
+A set is 
 
 ```py
 #!/usr/python3
