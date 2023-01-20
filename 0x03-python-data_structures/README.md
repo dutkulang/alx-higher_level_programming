@@ -83,7 +83,7 @@ print(presidents[p1])
 
 1. **set**
 
-A set is 
+A set is a collection of data types.
 
 ```py
 #!/usr/python3
