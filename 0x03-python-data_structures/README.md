@@ -83,7 +83,9 @@ print(presidents[p1])
 
 1. **set**
 
-A set is 
+A set is a collection of `unordered`, `unordered`, and `unindexed` elements.
+
+Elements in a set can be of any data type but are `not indexed`.
 
 ```py
 #!/usr/python3
