@@ -89,7 +89,7 @@ Elements in a set can be of any data type but are `not indexed`.
 
 <ins>When to use sets</ins>
 - when order of data does not matter
-- when data needs to be unique
+- when data needs to be uniquea collection of data types.
 
 ```py
 #!/usr/python3
