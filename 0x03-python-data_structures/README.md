@@ -95,8 +95,28 @@ Elements in a set can not be duplicate, can not be repeated inside the set.
 - when order of data does not matter
 - when data needs to be uniquea collection of data types.
 
+## Declearing a set.
+
+`method1.py`
+
 ```py
 #!/usr/python3
 my_set = {12,'Dut', True, False, 345.67, 7/3}
 #{False, True, 2.3333333333333335, 'Dut', 345.67, 12}
+```
+
+`method2.py`
+
+```py
+#!/usr/bin/python3
+
+"""
+using the set method
+set(argument)
+set takes in one argument ONLY usually another data structure
+
+set will convert the provided data structure into a set. 
+"""
+my_set = {[12,'Dut', True, False, 345.67, 7/3]}
+#{12, 2.3333333333333335, 345.67, 'Dut', False, True}
 ```
