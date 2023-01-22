@@ -118,5 +118,16 @@ set takes in one argument ONLY usually another data structure
 set will convert the provided data structure into a set. 
 """
 my_set = {[12,'Dut', True, False, 345.67, 7/3]}
+print(my_set)
+
 #{12, 2.3333333333333335, 345.67, 'Dut', False, True}
+```
+`method3.py`
+
+```py
+#!/usr/bin/python3
+empty = set()
+print(empty)
+
+#{}
 ```
