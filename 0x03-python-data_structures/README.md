@@ -85,7 +85,11 @@ print(presidents[p1])
 
 A set is a collection of `unordered`, `unordered`, and `unindexed` elements.
 
+A set is a collection of data of different data types.
+
 Elements in a set can be of any data type but are `not indexed`.
+
+Elements in a set can not be duplicate, can not be repeated inside the set.
 
 <ins>When to use sets</ins>
 - when order of data does not matter
