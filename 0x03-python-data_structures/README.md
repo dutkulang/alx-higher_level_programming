@@ -87,6 +87,10 @@ A set is a collection of `unordered`, `unordered`, and `unindexed` elements.
 
 Elements in a set can be of any data type but are `not indexed`.
 
+<ins>When to use sets</ins>
+- when order of data does not matter
+- when data needs to be unique
+
 ```py
 #!/usr/python3
 my_set = {12,'Dut', True, False, 345.67, 7/3}
