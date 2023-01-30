@@ -58,3 +58,25 @@ except ErrorName4:
 else:
     #else body
 ```
+
+`method2.py`
+
+```py
+#!/usr/bin/python3
+
+try:
+    #try this
+except (ErrorName1, ErrorName2, ErrorName3, ...):
+    # one message on how to manage all the listed error names
+```
+
+`method2.py`
+
+```py
+#!/usr/bin/python3
+
+try:
+    #try this
+except:
+    # Catch every error regardless of name
+```
