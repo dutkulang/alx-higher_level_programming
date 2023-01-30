@@ -35,3 +35,26 @@ try:
 except ErrorName:
     """ then this block will handle it"""
 ```
+
+### Examples
+
+If you know all the error name that might occur then you can choose to handle them one by one
+
+`method1.py`
+```py
+#!/usr/bin/python3
+
+try:
+    # trying code
+except ErrorName1:
+    # code to handle ErrorCode1
+except ErrorName2:
+    # code to handle ErrorCode2
+except ErrorName3:
+    # code to handle ErrorCode3
+except ErrorName4:
+    # code to handle ErrorCode4
+....
+else:
+    #else body
+```
