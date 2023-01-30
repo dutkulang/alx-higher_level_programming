@@ -12,3 +12,8 @@ try:
 except ErrorName:
     # how to handle the error usually a message
 ```
+--> try block contains the code that we suspect will cause an error or could raise an exception.
+
+`It is where an error is likely to occur`
+
+--> except block contains the code that will run incase the error / exception is raised.
