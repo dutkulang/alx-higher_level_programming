@@ -184,5 +184,4 @@ my_set.remove(`elehant`) #returns an error cause `elephant` is not an element in
 my_set = {12,'Dut', True, False, 345.67, 7/3}
 my_set.discard(True) # removes True from the set
 my_set.discard("Hello") # returns no error though "Hello" does not exist
-
 ```
