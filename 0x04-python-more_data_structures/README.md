@@ -42,7 +42,7 @@ print(x(3)) #27
 #Using lambda to find if a number is even or odd
 #prints True if number is even else false
 
-x = lambda x : x if True % 2 == 0 else False
+x = lambda x : True if x % 2 == 0 else False
 print(x(5)) #False
 ```
 <hr><br>
