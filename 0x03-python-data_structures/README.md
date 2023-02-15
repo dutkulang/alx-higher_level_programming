@@ -168,3 +168,12 @@ for element in my_set:
 - `remove(element_to_removed)` :- Removes an element specified from a set but returns an error if the element does not exist.
 - `discard(element)` :- Removes an element specified from a set but returns no error if the element does not exist.
 - `pop()` :- Randomly removes an element from a set.
+
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+my_set.remove(12) # removes 12 from the set
+
+my_set.remove(`elehant`) #returns an error cause `elephant` is not an element in the set
+```
