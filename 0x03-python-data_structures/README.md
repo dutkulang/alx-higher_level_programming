@@ -132,3 +132,25 @@ print(empty)
 
 #{}
 ```
+
+### <ins>Finding length  of a set
+
+`Warning Since sets are not indexed, you can not perform slicing using indexes but you can loop through the elements in a set printing out each element`
+<hr>
+
+`length_of_set1.py`
+```py
+#!/usr/bin/python3
+my_set = {[12, 'Dut', True, False, 345.67, 7/3]}
+print(len(my_set)) #returns the number of elements inside a set
+```
+
+`length_of_set2.py`
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+
+for element in my_set:
+    print(element)
+```
