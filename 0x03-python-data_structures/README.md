@@ -217,3 +217,29 @@ c = {"cow", "Dutin", "rat", 1}
 print(a.union(b,c)) #finds the union of set a, b, c
 #{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
 ```
+## **Intersection**
+Intersection returns the elements that are common in sets
+
+`Using &`
+```py
+#!/usr/bin/python3
+
+a = {"Dut", "Putin", True, False}
+b = {1,2,3,0,-1,7.8, True, "Dut"}
+c = {"Putin", 0, -1, 7.8}
+print(a & b) #prints the common elements in set a and b
+print(b & c) #prints the common elements in set b and c
+print(a & b & c) #prints the common elements in set a, b and c
+```
+`Using Intersection`
+
+```py
+#!/usr/bin/python3
+
+a = {"Dut", "Putin", True, False}
+b = {1,2,3,0,-1,7.8, True, "Dut"}
+c = {"Putin", 0, -1, 7.8}
+print(a.intersection(b)) #prints the common elements in set a and b
+print(b.intersection(c)) #prints the common elements in set b and c
+print(a.intersection(b,c)) #prints the common elements in set a, b and c
+```
