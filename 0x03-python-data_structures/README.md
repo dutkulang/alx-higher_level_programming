@@ -157,3 +157,12 @@ my_set = {12,'Dut', True, False, 345.67, 7/3}
 for element in my_set:
     print(element)
 ```
+
+<ins>**Adding Elements**
+
+- `add(element)` :- Allows one element to be added to a set.
+- `update(elements)` :- allows multiple elements to be added to a set.
+
+<ins>**Removing elemets from a set**
+
+- `remove(element_to_removed)` :- Removes an element specified from a set but returns an error if the element does not exist.
