@@ -1,6 +1,6 @@
 # lambda, map, filter and reduce functions
 
-1. <ins>**lambda funnction**</ins>
+1. ## <ins>**lambda funnction**</ins>
 
 lambda is a function that does not have a name.
 
@@ -47,7 +47,7 @@ print(x(5)) #False
 ```
 <hr><br>
 
-2. <ins>**map function**</ins>
+2. ## <ins>**map function**</ins>
 
 map is a function that takes in two arguments, a function, and an iterable. It loops through the iterable passing each of its elements in the function. iterable can be a list or a tuple.
 
@@ -198,7 +198,7 @@ For each loop, map will go inside each iterable pick one element in each at the 
 `pow(3,4)` -> 3*3\*3\*3
 
 
-3. <ins>**filter function**</ins>
+3. ## <ins>**filter function**</ins>
 
 The filter function as the it's name says, just filters out the items from it and them to the function that will check which of the items is the biggest,highest, it will lastly return the biggest of all the items inside the iterable.
 `` inside the iterable that the function returns as `true`.
@@ -251,7 +251,7 @@ print(result)
 #[13, 19]
 ```
 
-4. <ins>**reduce function**</ins>
+4. ## <ins>**reduce function**</ins>
 
 reduce is not a built python function it has to be imported from `functools` library that comes with python.
 
