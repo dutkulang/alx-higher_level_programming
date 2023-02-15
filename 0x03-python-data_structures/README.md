@@ -89,7 +89,8 @@ A set is a collection of data of different data types.
 
 Elements in a set can be of any data type but are `not indexed`.
 
-Elements in a set can not be duplicate, can not be repeated inside the set.
+Elements in a set can not be duplicate, can not be repeated inside the set, elements in a set are not `indexed`.
+
 
 <ins>When to use sets</ins>
 - when order of data does not matter
