@@ -39,7 +39,7 @@ print(x(3)) #27
 ```py
 #!/usr/bin/python3
 
-#Using lambda to find number is even or odd
+#Using lambda to find if a number is even or odd
 #prints True if number is even else false
 
 x = lambda x : x if True % 2 == 0 else False
@@ -49,7 +49,7 @@ print(x(5)) #False
 
 2. <ins>**map function**</ins>
 
-map is a function that takes in two arguments, a function, and an iterable. It loops through the iterable passing each of its elemnts in the function. iterable can be a list or a tuple.
+map is a function that takes in two arguments, a function, and an iterable. It loops through the iterable passing each of its elements in the function. iterable can be a list or a tuple.
 
 ## Declaration
 
