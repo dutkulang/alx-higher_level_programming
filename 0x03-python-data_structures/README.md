@@ -163,7 +163,7 @@ for element in my_set:
 - `add(element)` :- Allows one element to be added to a set.
 - `update(elements)` :- allows multiple elements to be added to a set.
 
-<ins>**Removing elemets from a set**
+<ins>**Removing elements from a set**
 
 - `remove(element_to_removed)` :- Removes an element specified from a set but returns an error if the element does not exist.
 - `discard(element)` :- Removes an element specified from a set but returns no error if the element does not exist.
@@ -176,4 +176,13 @@ my_set = {12,'Dut', True, False, 345.67, 7/3}
 my_set.remove(12) # removes 12 from the set
 
 my_set.remove(`elehant`) #returns an error cause `elephant` is not an element in the set
+```
+
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+my_set.discard(True) # removes True from the set
+my_set.discard("Hello") # returns no error though "Hello" does not exist
+
 ```
