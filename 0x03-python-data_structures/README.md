@@ -166,3 +166,5 @@ for element in my_set:
 <ins>**Removing elemets from a set**
 
 - `remove(element_to_removed)` :- Removes an element specified from a set but returns an error if the element does not exist.
+- `discard(element)` :- Removes an element specified from a set but returns no error if the element does not exist.
+- `pop()` :- Randomly removes an element from a set.
