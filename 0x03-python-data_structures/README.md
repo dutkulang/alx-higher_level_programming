@@ -192,3 +192,28 @@ my_set.discard("Hello") # returns no error though "Hello" does not exist
 my_set = {12,'Dut', True, False, 345.67, 7/3}
 print(my_set.pop()) #randomly removes any element from a set and returns the deleted element
 ```
+
+## **Union**
+Union returns all the elements in sets without repeating duplicate elements.
+
+`Using pipe (|) method`
+```py
+#!/usr/bin/python3
+
+a = {1,2,3,4,5, 'Dutin'}
+b = {"Dutin","ALX","Putin"}
+c = {"cow", "Dutin", "rat", 1}
+print(a|b|c) 
+#{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
+```
+
+`Using the union method`
+```py
+#!/usr/bin/python3
+
+a = {1,2,3,4,5, 'Dutin'}
+b = {"Dutin","ALX","Putin"}
+c = {"cow", "Dutin", "rat", 1}
+print(a.union(b,c))
+#{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
+```
