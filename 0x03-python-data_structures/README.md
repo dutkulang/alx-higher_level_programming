@@ -185,3 +185,10 @@ my_set = {12,'Dut', True, False, 345.67, 7/3}
 my_set.discard(True) # removes True from the set
 my_set.discard("Hello") # returns no error though "Hello" does not exist
 ```
+
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+print(my_set.pop()) #randomly removes any element from a set and returns the deleted element
+```
