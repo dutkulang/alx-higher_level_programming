@@ -203,7 +203,7 @@ Union returns all the elements in sets without repeating duplicate elements.
 a = {1,2,3,4,5, 'Dutin'}
 b = {"Dutin","ALX","Putin"}
 c = {"cow", "Dutin", "rat", 1}
-print(a|b|c) 
+print(a|b|c) #union of set a, b, c
 #{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
 ```
 
@@ -214,6 +214,6 @@ print(a|b|c)
 a = {1,2,3,4,5, 'Dutin'}
 b = {"Dutin","ALX","Putin"}
 c = {"cow", "Dutin", "rat", 1}
-print(a.union(b,c))
+print(a.union(b,c)) #finds the union of set a, b, c
 #{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
 ```
