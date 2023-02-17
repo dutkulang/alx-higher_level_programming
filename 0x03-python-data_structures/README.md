@@ -243,3 +243,6 @@ print(a.intersection(b)) #prints the common elements in set a and b
 print(b.intersection(c)) #prints the common elements in set b and c
 print(a.intersection(b,c)) #prints the common elements in set a, b and c
 ```
+## **Difference**
+
+``
