@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 
 """
-Adding integers
+Adding a and b
+a and b must be neither int or float
+the result is typecasted to float
 """
 
 
 def add_integer(a, b=98):
 
-    """
-    Return sum of a and b
-    floats must be typecasted to integers
-    Raises TypeError: If a or b is not an integer or float
-    """
+    """Return sum of a and b
+    Floats must be typecasted to integers
+    Raises: TypeError: If a or b is not an integer or float"""
 
     if (not isinstance(a, int) and not isinstance(a, float)):
         raise TypeError("a must be an integer")
