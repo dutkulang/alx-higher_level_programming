@@ -81,19 +81,22 @@ print(presidents[p1])
 
 ```
 
-1. **set**
+1. ## **set**
 
-A set is a collection of `unordered`, `unordered`, and `unindexed` elements.
+A set is a collection of `unordered`, `unique`, and `unindexed` elements.
 
 A set is a collection of data of different data types.
 
 Elements in a set can be of any data type but are `not indexed`.
 
-Elements in a set can not be duplicate, can not be repeated inside the set.
+Elements in a set can not be duplicate, can not be repeated inside the set, elements in a set are not `indexed`. Since sets are not indexed, operations like slicing is `NOT` possible.
+
 
 <ins>When to use sets</ins>
 - when order of data does not matter
 - when data needs to be uniquea collection of data types.
+
+<hr>
 
 ## Declearing a set.
 
@@ -131,3 +134,115 @@ print(empty)
 
 #{}
 ```
+<hr>
+
+### <ins>Finding length  of a set
+
+`Warning Since sets are not indexed, you can not perform slicing using indexes but you can loop through the elements in a set printing out each element`
+<hr>
+
+`length_of_set1.py`
+```py
+#!/usr/bin/python3
+my_set = {[12, 'Dut', True, False, 345.67, 7/3]}
+print(len(my_set)) #returns the number of elements inside a set
+```
+
+`length_of_set2.py`
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+
+for element in my_set:
+    print(element)
+```
+
+<ins>**Adding Elements**
+
+- `add(element)` :- Allows one element to be added to a set.
+- `update(elements)` :- allows multiple elements to be added to a set.
+
+<ins>**Removing elements from a set**
+
+- `remove(element_to_removed)` :- Removes an element specified from a set but returns an error if the element does not exist.
+- `discard(element)` :- Removes an element specified from a set but returns no error if the element does not exist.
+- `pop()` :- Randomly removes an element from a set.
+
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+my_set.remove(12) # removes 12 from the set
+
+my_set.remove(`elehant`) #returns an error cause `elephant` is not an element in the set
+```
+
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+my_set.discard(True) # removes True from the set
+my_set.discard("Hello") # returns no error though "Hello" does not exist
+```
+
+```py
+#!/usr/bin/python3
+
+my_set = {12,'Dut', True, False, 345.67, 7/3}
+print(my_set.pop()) #randomly removes any element from a set and returns the deleted element
+```
+
+## **Union**
+Union returns all the elements in sets without repeating duplicate elements.
+
+`Using pipe (|) method`
+```py
+#!/usr/bin/python3
+
+a = {1,2,3,4,5, 'Dutin'}
+b = {"Dutin","ALX","Putin"}
+c = {"cow", "Dutin", "rat", 1}
+print(a|b|c) #union of set a, b, c
+#{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
+```
+
+`Using the union method`
+```py
+#!/usr/bin/python3
+
+a = {1,2,3,4,5, 'Dutin'}
+b = {"Dutin","ALX","Putin"}
+c = {"cow", "Dutin", "rat", 1}
+print(a.union(b,c)) #finds the union of set a, b, c
+#{1, 2, 3, 4, 5, 'rat', 'Dutin', 'cow', 'Putin', 'ALX'}
+```
+## **Intersection**
+Intersection returns the elements that are common in sets
+
+`Using &`
+```py
+#!/usr/bin/python3
+
+a = {"Dut", "Putin", True, False}
+b = {1,2,3,0,-1,7.8, True, "Dut"}
+c = {"Putin", 0, -1, 7.8}
+print(a & b) #prints the common elements in set a and b
+print(b & c) #prints the common elements in set b and c
+print(a & b & c) #prints the common elements in set a, b and c
+```
+`Using Intersection`
+
+```py
+#!/usr/bin/python3
+
+a = {"Dut", "Putin", True, False}
+b = {1,2,3,0,-1,7.8, True, "Dut"}
+c = {"Putin", 0, -1, 7.8}
+print(a.intersection(b)) #prints the common elements in set a and b
+print(b.intersection(c)) #prints the common elements in set b and c
+print(a.intersection(b,c)) #prints the common elements in set a, b and c
+```
+## **Difference**
+
+``
