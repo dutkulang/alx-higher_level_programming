@@ -1,4 +1,4 @@
---Sorted average temperature of cities
+-- Sorted average temperature of cities
 SELECT `city`, AVG(`value`) AS `avg_temp`
 FROM `temperatures`
 GROUP BY `city`
