@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import MySQLdb
+import sys
 
 """ conn = MySQLdb.connect(host="localhost",
                        port=3306,
@@ -27,5 +28,8 @@ def db_connect(username, password, db_name):
         print(row)
     cur.close()
     conn.close()
-
-db_connect("root", "root","my_db")
+if __name__ == "__main__":
+    usr = sys.argv[1]
+    pwd = sys.argv[2]
+    db = sys.argv[3]
+    db_connect(usr, pwd,db)
