@@ -10,16 +10,11 @@ As you run this script, provide in this order
 """
 
 
-def db_connect(username, password, db_name):
-    host = "localhost"
-    port = 3306
-    charset = "utf8"
-    conn = MySQLdb.connect(host=host,
-                           port=port,
-                           user=username,
-                           passwd=password,
-                           db=db_name,
-                           charset=charset)
+if __name__ == "__main__":
+    usr = sys.argv[1]
+    pwd = sys.argv[2]
+    db = sys.argv[3]
+    conn = MySQLdb.connect(user=usr, passwd=pwd, db=db)
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_rows = cur.fetchall()
@@ -27,10 +22,3 @@ def db_connect(username, password, db_name):
         print(row)
     cur.close()
     conn.close()
-
-
-if __name__ == "__main__":
-    usr = sys.argv[1]
-    pwd = sys.argv[2]
-    db = sys.argv[3]
-    db_connect(usr, pwd, db)
