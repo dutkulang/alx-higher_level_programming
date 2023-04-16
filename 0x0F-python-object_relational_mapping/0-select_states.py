@@ -3,24 +3,23 @@
 import MySQLdb
 import sys
 
-""" conn = MySQLdb.connect(host="localhost",
-                       port=3306,
-                       user="dut",
-                       passwd="Nyanjur@081",
-                       db="hbtn_0e_0_usa",
-                       charset="utf8") """
+""" listing all states from db in Ascending order
+As you run this script, provide in this order
+   mysql_username mysql_user_password, db_name
+
+"""
+
 
 def db_connect(username, password, db_name):
     host = "localhost"
     port = 3306
     charset = "utf8"
-    
-    conn = MySQLdb.connect(host = host,
-                           port = port,
-                           user = username,
-                           passwd = password,
-                           db = db_name,
-                           charset = charset)
+    conn = MySQLdb.connect(host=host,
+                           port=port,
+                           user=username,
+                           passwd=password,
+                           db=db_name,
+                           charset=charset)
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_rows = cur.fetchall()
@@ -28,8 +27,10 @@ def db_connect(username, password, db_name):
         print(row)
     cur.close()
     conn.close()
+
+
 if __name__ == "__main__":
     usr = sys.argv[1]
     pwd = sys.argv[2]
     db = sys.argv[3]
-    db_connect(usr, pwd,db)
+    db_connect(usr, pwd, db)
