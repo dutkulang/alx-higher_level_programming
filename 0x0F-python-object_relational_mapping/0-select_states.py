@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-
-import MySQLdb
-import sys
-
 """ listing all states from db in Ascending order
 As you run this script, provide in this order
    mysql_username mysql_user_password, db_name
-
 """
 
+import sys
+import MySQLdb
 
 if __name__ == "__main__":
     usr = sys.argv[1]
