@@ -1,1 +1,3 @@
-Python networking ALX
+python networking
+
+- curl
